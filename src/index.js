@@ -3,7 +3,7 @@ module.exports = function check(str, bracketsConfig) {
 
   for(let i = 0; i < bracketsArr.length; i++) {
     if(str.includes(bracketsArr[i])) {
-      str = str.replace(conf[i], "");
+      str = str.replace(bracketsArr[i], "");
       i = -1;
     }
   }
